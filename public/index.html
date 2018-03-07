@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX Sample</title>
+</head>
+<body>
+    
+    <section>
+        <h1>XHR Sample</h1>
+        <div id="html-container"></div>
+        <button id="xhr-get-content">Get Content</button>
+    </section>
+    
+    
+    <section>
+        <h1>XHR JSON Sample</h1>
+        <div>
+            <p>Client name: <span id="xhr-client-name"></span></p>
+            <p>Account balance: <span id="xhr-account-balance"></span></p>
+        </div>
+        <button id="xhr-get-client-data">Get Client Data</button>
+        <button id="xhr-fetch-client-data">Fetch Client Data</button>
+    </section>
+    
+    <section>
+        <h1>Form Sample</h1>
+        <div id="message-container"></div>
+        <form class="client-balance">
+            <label>Client name:
+                <input type="text" id="form-client-name" required>
+            </label>
+            <label>Account balance:
+                <input type="number" id="form-account-balance" required>
+            </label>
+            <input type="submit" value="Update Balance">
+            <input type="reset">
+        </form>
+        <a href="view-client-data">View Clients</a>
+    </section>
+    
+    
+    <p>Page loaded: <span id="loaded"></span></p>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    
+    <script src="js/index.js"></script>
+    <script src="js/index-xhr-html.js"></script>
+    <script src="js/index-xhr-json.js"></script>
+    <script src="js/index-fetch-json.js"></script>
+    <script src="js/index-form.js"></script>
+</body>
+</html>
